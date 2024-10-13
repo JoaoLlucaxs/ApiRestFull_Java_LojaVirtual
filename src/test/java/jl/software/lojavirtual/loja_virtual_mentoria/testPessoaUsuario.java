@@ -3,19 +3,14 @@ package jl.software.lojavirtual.loja_virtual_mentoria;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-<<<<<<< HEAD
 import org.springframework.context.annotation.Profile;
-=======
->>>>>>> 164872c1c4da4936cd98dd3ad5bae73f5f3e4fee
 
-import jl.software.lojavirtual.loja_virtual_mentoria.controller.PessoaController;
-import jl.software.lojavirtual.loja_virtual_mentoria.model.Pessoa_Fisica;
 import jl.software.lojavirtual.loja_virtual_mentoria.model.Pessoa_Juridica;
 import jl.software.lojavirtual.loja_virtual_mentoria.repository.PessoaRepository;
 import jl.software.lojavirtual.loja_virtual_mentoria.service.PessoaUserService;
 import junit.framework.TestCase;
 
-<<<<<<< HEAD
+
 @Profile("test")
 @SpringBootTest(classes = LojaVirtualMentoriaApplication.class)
 public class testPessoaUsuario extends TestCase{
@@ -52,27 +47,5 @@ public class testPessoaUsuario extends TestCase{
 		pessoa_fisica.setEmail("claudiojr02@gmail.com");
 		pessoa_fisica.setEmpresa(pessoa_fisica);
 		*/
-=======
-@SpringBootTest(classes = LojaVirtualMentoriaApplication.class)
-public class testPessoaUsuario extends TestCase{
-	
-	@Autowired
-	private PessoaController pessoaController;
-	
-	@Test
-	public void testCadPessoaFisica() {
-		Pessoa_Juridica pessoa_juridica=new Pessoa_Juridica();
-		pessoa_juridica.setCnpj("43443242432");
-		pessoa_juridica.setNome("Queiroz System LTDA");
-		pessoa_juridica.setEmail("systemltdaqueiroz@gmail.com");
-		pessoa_juridica.setTelefone("21978765444");
-		pessoa_juridica.setInsc_Estadual("554453343437");
-		pessoa_juridica.setNomeFantasia("54665554545");
-		pessoa_juridica.setRazaoSocial("665554545");
-		
-		pessoaController.salvarPj(pessoa_juridica);
-		
-		
->>>>>>> 164872c1c4da4936cd98dd3ad5bae73f5f3e4fee
 	}
 }
