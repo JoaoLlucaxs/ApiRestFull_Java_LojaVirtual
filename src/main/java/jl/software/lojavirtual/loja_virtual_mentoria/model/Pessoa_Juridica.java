@@ -9,14 +9,19 @@ import java.util.Objects;
 @PrimaryKeyJoinColumn(name = "id") // apontando para o id Pessoa
 public class Pessoa_Juridica extends Pessoa implements Serializable {
     private static final long serialVersionUID=1L;
+    
     @Column(nullable = false)
     private String cnpj;
+    
     @Column(name = "inscricao_estadual", nullable = false)
     private String insc_Estadual;
+    
     @Column(name = "inscricao_municipal")
     private String insc_Municipal;
+    
     @Column(nullable = false)
     private String nomeFantasia;
+    
     @Column(nullable = false)
     private String razaoSocial;
 

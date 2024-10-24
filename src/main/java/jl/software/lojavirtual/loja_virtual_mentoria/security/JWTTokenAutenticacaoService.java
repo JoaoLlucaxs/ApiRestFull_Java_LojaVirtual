@@ -44,6 +44,8 @@ public class JWTTokenAutenticacaoService {
 		
 		String token=TOKEN_PREFIX + " " + JWT;
 		
+		System.out.println(token);
+		
 		response.addHeader(HEADER_TOKEN, token);// Da resposta para a tela e para o cliente ... outra api , navegador , aplicativo , javascript ou até outra chamada Java
 		
 		liberacaoDeCors(response);// Evitando problema de CORS no navegador
